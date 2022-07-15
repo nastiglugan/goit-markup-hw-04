@@ -15,6 +15,7 @@
   --color-ligt: #757575;
   --color-white: #ffffff;
   --color-dark: #212121;
+  --color-icon: #afb1b8;
 
   /* border-color */
   --border-color: #eeeeee;
@@ -229,6 +230,34 @@ body {
 }
 /* Feature section */
 
+/* Я так вирішила зробити, а потім мені написали, 
+що треба через флекси, а чого так не можно?*/
+
+/* .feature-item {
+  padding-top: 25px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--background-color-light) 120px,
+    var(--color-white) 120px
+  );
+}
+
+.feature-icon {
+  display: block;
+  margin-bottom: 55px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.wrapper-icon {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color-light);
+}
+
 .feature-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -264,6 +293,7 @@ body {
   border-top-right-radius: 0;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .team-container {
@@ -279,6 +309,72 @@ body {
 
 .team-desc {
   color: var(--color-ligt);
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--color-icon);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+.social-icon {
+  fill: currentColor;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  fill: currentColor;
+}
+
+/* Clients section */
+.clients-title {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-icon);
+  border: 1px solid var(--color-icon);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: currentColor;
 }
 
 /* Footer */
@@ -294,6 +390,12 @@ body {
   display: block;
   margin-bottom: 20px;
 }
+
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
 .footer-adress {
   font-style: normal;
   margin-top: 20px;
@@ -305,6 +407,16 @@ body {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+.footer-social-title {
+  text-transform: uppercase;
+  line-height: calc(16 / 14);
+  margin-bottom: 20px;
+}
+
+.footer-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
 }
 
 /*PORTFOLIO PAGE*/
