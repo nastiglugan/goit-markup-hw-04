@@ -8,6 +8,7 @@
   /* bg-color */
   --background-color-dark: #2f303a;
   --background-color-light: #f5f4fa;
+  --background-color-gray: #c4c4c4;
 
   /* txt-color */
   --color-blue: #2196f3;
@@ -167,7 +168,8 @@ body {
 .intro {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-color-dark);
+  background-image: url(../images/bg/bg.jpg);
+  background-color: var(--background-color-gray);
   color: var(--color-white);
   text-align: center;
 }
