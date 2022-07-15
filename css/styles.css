@@ -86,6 +86,11 @@ body {
   color: var(--color-blue);
 }
 
+.active:hover,
+.active:focus {
+  color: var(--color-blue);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -154,13 +159,25 @@ body {
   margin-left: auto;
   gap: 50px;
 }
+
 .contact-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: var(--color-ligt);
 }
 
-.active:hover,
-.active:focus {
+.contact-icon {
+  fill: currentColor;
+}
+.contact-link:hover,
+.contact-link:focus {
   color: var(--color-blue);
+}
+.contact-icon:hover,
+.contact-icon:focus {
+  fill: currentColor;
 }
 
 /* Intro section */
@@ -168,11 +185,23 @@ body {
 .intro {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/bg/bg.jpg);
-  background-color: var(--background-color-gray);
   color: var(--color-white);
   text-align: center;
 }
+
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bg/bg.jpg);
+  background-color: var(--background-color-gray);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .intro-title {
   width: 696px;
   margin-bottom: 30px;
